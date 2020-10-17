@@ -1,0 +1,9 @@
+H:\GitHub\Trabalho-OA\Connect\Shared\bin\Debug\netstandard2.1\Connect.Shared.deps.json
+H:\GitHub\Trabalho-OA\Connect\Shared\bin\Debug\netstandard2.1\Connect.Shared.dll
+H:\GitHub\Trabalho-OA\Connect\Shared\bin\Debug\netstandard2.1\Connect.Shared.pdb
+H:\GitHub\Trabalho-OA\Connect\Shared\obj\Debug\netstandard2.1\Connect.Shared.csprojAssemblyReference.cache
+H:\GitHub\Trabalho-OA\Connect\Shared\obj\Debug\netstandard2.1\Connect.Shared.AssemblyInfoInputs.cache
+H:\GitHub\Trabalho-OA\Connect\Shared\obj\Debug\netstandard2.1\Connect.Shared.AssemblyInfo.cs
+H:\GitHub\Trabalho-OA\Connect\Shared\obj\Debug\netstandard2.1\Connect.Shared.csproj.CoreCompileInputs.cache
+H:\GitHub\Trabalho-OA\Connect\Shared\obj\Debug\netstandard2.1\Connect.Shared.dll
+H:\GitHub\Trabalho-OA\Connect\Shared\obj\Debug\netstandard2.1\Connect.Shared.pdb

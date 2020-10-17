@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "gEELW7KZ6Uhs8rBp0GGFNiq+UuZDpKtBqWtPo5/1qRhI1T228BOhrh2YE1Te55TJavNT2q3IOSBgAYiGpKz7EQ==",
+  "dgSpecHash": "yHh4yPcsvm2v9KgWjx92WirQfPin/iPHJZenVCJn/YeLxghYZiSU2xp/cCK74AAm6Iwr5ABvUgN+SzNCq7tmuQ==",
   "success": true,
   "projectFilePath": "H:\\GitHub\\Trabalho-OA\\Connect\\Server\\Connect.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\reGOD\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.6\\microsoft.aspnetcore.authorization.3.1.6.nupkg.sha512",
     "C:\\Users\\reGOD\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.6\\microsoft.aspnetcore.components.3.1.6.nupkg.sha512",
     "C:\\Users\\reGOD\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\3.1.6\\microsoft.aspnetcore.components.analyzers.3.1.6.nupkg.sha512",
+    "C:\\Users\\reGOD\\.nuget\\packages\\microsoft.aspnetcore.components.dataannotations.validation\\3.2.0-rc1.20223.4\\microsoft.aspnetcore.components.dataannotations.validation.3.2.0-rc1.20223.4.nupkg.sha512",
     "C:\\Users\\reGOD\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\3.1.6\\microsoft.aspnetcore.components.forms.3.1.6.nupkg.sha512",
     "C:\\Users\\reGOD\\.nuget\\packages\\microsoft.aspnetcore.components.web\\3.1.6\\microsoft.aspnetcore.components.web.3.1.6.nupkg.sha512",
     "C:\\Users\\reGOD\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\3.2.1\\microsoft.aspnetcore.components.webassembly.3.2.1.nupkg.sha512",
@@ -45,10 +46,10 @@
     "C:\\Users\\reGOD\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\3.2.0\\pomelo.entityframeworkcore.mysql.3.2.0.nupkg.sha512",
     "C:\\Users\\reGOD\\.nuget\\packages\\pomelo.jsonobject\\2.2.1\\pomelo.jsonobject.2.2.1.nupkg.sha512",
     "C:\\Users\\reGOD\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
-    "C:\\Users\\reGOD\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "C:\\Users\\reGOD\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0-rc.1.20451.14\\system.componentmodel.annotations.5.0.0-rc.1.20451.14.nupkg.sha512",
     "C:\\Users\\reGOD\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
-    "C:\\Users\\reGOD\\.nuget\\packages\\system.net.http.json\\3.2.0\\system.net.http.json.3.2.0.nupkg.sha512",
-    "C:\\Users\\reGOD\\.nuget\\packages\\system.text.json\\4.7.1\\system.text.json.4.7.1.nupkg.sha512"
+    "C:\\Users\\reGOD\\.nuget\\packages\\system.net.http.json\\5.0.0-rc.1.20451.14\\system.net.http.json.5.0.0-rc.1.20451.14.nupkg.sha512",
+    "C:\\Users\\reGOD\\.nuget\\packages\\system.text.json\\5.0.0-rc.1.20451.14\\system.text.json.5.0.0-rc.1.20451.14.nupkg.sha512"
   ],
   "logs": []
 }

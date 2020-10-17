@@ -1,5 +1,5 @@
 ﻿<div class="top-row pl-4 navbar navbar-dark">
-    <a class="navbar-brand" href="">Connect</a>
+    <a class="navbar-brand" href="">blazor-mysql</a>
     <button class="navbar-toggler" @onclick="ToggleNavMenu">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -21,6 +21,30 @@
             <NavLink class="nav-link" href="fetchdata">
                 <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
             </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="/User/CadastroUsuario">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Cadastro Usuário
+            </NavLink>
+        <ul class="nav flex-column">
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="/User/ListUsuario" Match=@NavLinkMatch.All>
+                    <span class="oi oi-plus" aria-hidden="true"></span>List de Usuario
+                </NavLink>
+            </li>
+        </ul>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="/Product/CadastroProduct">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Cadastro Produto
+            </NavLink>
+        <ul class="nav flex-column">
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="/Product/ListProduct" Match=@NavLinkMatch.All>
+                    <span class="oi oi-plus" aria-hidden="true"></span>List de Produto
+                </NavLink>
+            </li>
+        </ul>
         </li>
     </ul>
 </div>
