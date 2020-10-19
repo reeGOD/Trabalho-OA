@@ -372,12 +372,12 @@ H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\RazorDeclaration\P
 H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\Razor\Pages\User\CadastroUser.razor.g.cs
 H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\Razor\Pages\User\EditUser.razor.g.cs
 H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\Razor\Pages\User\ListUser.razor.g.cs
-H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\iudFsgmF7NGL_KLh7ZtWd7kte_aT3tq0Tc-JBbKlx2E=.hash
-H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\KZzwq1x_SJtg7o8-f-tMQ30vXQmfcH0iDH00to197pw=.hash
-H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\O1vuFVlt1sCrsrjfu_fnc14jm_6Gu6To2A8FCNlyBvc=.hash
 H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\i7_uAWU_Z0C18JJubo-dF5wgYgrduxXAu7_NVxNtBcw=.hash
 H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\9HGvnQk80Pk4z-yz7w4BO2sgYDG_J9xi9cNVTdlG7CQ=.hash
 H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\vO_Y3zeokojTa4SlwlL6yXGo08U8eD7QqLl3B_oUU8U=.hash
 H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\BwqPvfEq7obG3cySRO7Q8cXop8mRJtyLlWnHbU45xzM=.hash
-H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\fJPqbw7zuoDmGvdAOWN0PtoWVgkiUKgLDHB5i64NtZk=.hash
-H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\mBrqWeKzFmyatdoc0l8TiJBRrq1shwateMjhLeYrouU=.hash
+H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\maGZ4smpIRFO9PcwGpBawsNMPQffzsMiSS-35sdrCE8=.hash
+H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\c47A3bO1T-z5mF0uVnuNKmJLwFpc4_-2kanIrWxQm6U=.hash
+H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\Ayc9er7crB3bKhvMBXONo_yadWi1_k-h7tUUW002mKI=.hash
+H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\O5i1Un-JUQCMbbTbitWioGqxACgZ7YNQeYdFR3TFsZo=.hash
+H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\LCF51DVfyY1_UpBeGzY1Qf0zpAp5_KvB5HhRwvEl2Rs=.hash

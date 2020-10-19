@@ -39,6 +39,5 @@ namespace Connect.Shared
         [Range(typeof(bool), "true", "true", ErrorMessage = "Aceitar os termos é obrigatório")]
         public bool AcceptTerms { get; set; }
 
-        
     }
 }

@@ -17,29 +17,6 @@ namespace Connect.Server.Migrations
                 .HasAnnotation("ProductVersion", "3.1.9")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("Connect.Shared.Lanche", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<string>("Descricao")
-                        .IsRequired()
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<string>("Valor")
-                        .IsRequired()
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Lanches");
-                });
-
             modelBuilder.Entity("Connect.Shared.User", b =>
                 {
                     b.Property<int>("Id")

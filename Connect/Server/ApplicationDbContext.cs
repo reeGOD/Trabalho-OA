@@ -10,6 +10,5 @@ namespace Connect.Server
         }
         public DbSet<User> Users { get; set; }
 
-        public DbSet<Lanche> Lanches { get; set; }
     }
 }

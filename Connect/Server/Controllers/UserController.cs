@@ -101,7 +101,7 @@ public class UserController : Controller
         return user;
     }
 
-    private bool ProductttExists(int id)
+    private bool UserExists(int id)
     {
         return db.Users.Any(e => e.Id == id);
     }
