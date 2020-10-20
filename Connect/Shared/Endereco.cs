@@ -8,7 +8,6 @@ namespace Connect.Shared
 {
     public class Endereco
     {
-        [Required]
         public int Id { get; set; }
 
         [Required]
@@ -28,6 +27,8 @@ namespace Connect.Shared
         
         [Required]
         public string Estado { get; set; }
+
+        public int UserId { get; set; }
 
         public User User { get; set; }
     }

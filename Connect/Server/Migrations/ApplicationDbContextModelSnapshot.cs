@@ -45,7 +45,13 @@ namespace Connect.Server.Migrations
                         .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
 
                     b.ToTable("Enderecos");
                 });
@@ -70,16 +76,19 @@ namespace Connect.Server.Migrations
 
             modelBuilder.Entity("Connect.Shared.Item", b =>
                 {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
                     b.Property<int>("LancheId")
                         .HasColumnType("int");
 
                     b.Property<int>("PedidoId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Id")
-                        .HasColumnType("int");
+                    b.HasKey("Id");
 
-                    b.HasKey("LancheId", "PedidoId");
+                    b.HasIndex("LancheId");
 
                     b.HasIndex("PedidoId");
 
@@ -107,29 +116,40 @@ namespace Connect.Server.Migrations
 
                     b.HasKey("Id");
 
+                    b.ToTable("Lanches");
+                });
+
+            modelBuilder.Entity("Connect.Shared.LancheIngrediente", b =>
+                {
+                    b.Property<int>("LancheId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("IngredienteId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Id")
+                        .HasColumnType("int");
+
+                    b.HasKey("LancheId", "IngredienteId");
+
                     b.HasIndex("IngredienteId");
 
-                    b.ToTable("Lanches");
+                    b.ToTable("LancheIngrediente");
                 });
 
             modelBuilder.Entity("Connect.Shared.Pedido", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     b.Property<int>("ItemId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("LancheId")
-                        .HasColumnType("int");
-
                     b.Property<decimal>("ValorTotal")
                         .HasColumnType("decimal(5, 2)");
 
-                    b.HasKey("id");
-
-                    b.HasIndex("LancheId");
+                    b.HasKey("Id");
 
                     b.ToTable("Pedidos");
                 });
@@ -155,9 +175,6 @@ namespace Connect.Server.Migrations
                         .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<int>("EnderecoId")
-                        .HasColumnType("int");
-
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
@@ -180,16 +197,22 @@ namespace Connect.Server.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("EnderecoId")
-                        .IsUnique();
-
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("Connect.Shared.Endereco", b =>
+                {
+                    b.HasOne("Connect.Shared.User", "User")
+                        .WithOne("Endereco")
+                        .HasForeignKey("Connect.Shared.Endereco", "UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Connect.Shared.Item", b =>
                 {
                     b.HasOne("Connect.Shared.Lanche", "Lanche")
-                        .WithMany("Item")
+                        .WithMany("Items")
                         .HasForeignKey("LancheId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -201,27 +224,17 @@ namespace Connect.Server.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Connect.Shared.Lanche", b =>
+            modelBuilder.Entity("Connect.Shared.LancheIngrediente", b =>
                 {
-                    b.HasOne("Connect.Shared.Ingrediente", null)
-                        .WithMany("Lanches")
+                    b.HasOne("Connect.Shared.Ingrediente", "Ingrediente")
+                        .WithMany("LancheIngredientes")
                         .HasForeignKey("IngredienteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
 
-            modelBuilder.Entity("Connect.Shared.Pedido", b =>
-                {
-                    b.HasOne("Connect.Shared.Lanche", null)
-                        .WithMany("Ingredientes")
-                        .HasForeignKey("LancheId");
-                });
-
-            modelBuilder.Entity("Connect.Shared.User", b =>
-                {
-                    b.HasOne("Connect.Shared.Endereco", "Enderecos")
-                        .WithOne("User")
-                        .HasForeignKey("Connect.Shared.User", "EnderecoId")
+                    b.HasOne("Connect.Shared.Lanche", "Lanche")
+                        .WithMany("LancheIngredientes")
+                        .HasForeignKey("LancheId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

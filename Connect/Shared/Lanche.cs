@@ -20,10 +20,10 @@ namespace Connect.Shared
 
         public int IngredienteId { get; set; }
     
-        public ICollection<Pedido> Ingredientes { get; set; }
+        public ICollection<LancheIngrediente> LancheIngredientes { get; set; }
 
         public int ItemId { get; set; }
 
-        public ICollection<Item> Item { get; set; }
+        public ICollection<Item> Items { get; set; }
     }
 }

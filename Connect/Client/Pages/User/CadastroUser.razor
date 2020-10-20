@@ -1,4 +1,4 @@
-@page  "/User/CadastroUsuario"
+@page  "/User/CadastroUser"
 @using System.Net.Http
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
@@ -37,37 +37,35 @@
             
             <div class="form-row">
                 <div class="form-group col-5">
-                <label>Rua</label>
-                    <InputText @bind-Value="user.Enderecos.Rua" class="form-control" />
-                    <ValidationMessage For="@(() => user.Enderecos.Rua)" />
-                </div>
-                <!--
-                <div class="form-group col-5">
-                <label>Rua</label>
-                    <InputNumber @bind-Value="user.Enderecos.CEP" class="form-control" />
-                    <ValidationMessage For="@(() => user.Enderecos.CEP)" />
+                <label>CEP</label>
+                    <InputNumber @bind-Value="user.Endereco.CEP" class="form-control" />
+                    <ValidationMessage For="@(() => user.Endereco.CEP)" />
                 </div>
                 <div class="form-group col-5">
                 <label>Rua</label>
-                    <InputNumber @bind-Value="user.Enderecos.Numero" class="form-control" />
-                    <ValidationMessage For="@(() => user.Enderecos.Numero)" />
+                    <InputText @bind-Value="user.Endereco.Rua" class="form-control" />
+                    <ValidationMessage For="@(() => user.Endereco.Rua)" />
                 </div>
                 <div class="form-group col-5">
-                <label>Rua</label>
-                    <InputText @bind-Value="user.Enderecos.Bairro" class="form-control" />
-                    <ValidationMessage For="@(() => user.Enderecos.Bairro)" />
+                <label>Numero</label>
+                    <InputNumber @bind-Value="user.Endereco.Numero" class="form-control" />
+                    <ValidationMessage For="@(() => user.Endereco.Numero)" />
                 </div>
                 <div class="form-group col-5">
-                <label>Rua</label>
-                    <InputText @bind-Value="user.Enderecos.Cidade" class="form-control" />
-                    <ValidationMessage For="@(() => user.Enderecos.Cidade)" />
+                <label>Bairro</label>
+                    <InputText @bind-Value="user.Endereco.Bairro" class="form-control" />
+                    <ValidationMessage For="@(() => user.Endereco.Bairro)" />
                 </div>
                 <div class="form-group col-5">
-                <label>Rua</label>
-                    <InputText @bind-Value="user.Enderecos.Estado" class="form-control" />
-                    <ValidationMessage For="@(() => user.Enderecos.Estado)" />
+                <label>Cidade</label>
+                    <InputText @bind-Value="user.Endereco.Cidade" class="form-control" />
+                    <ValidationMessage For="@(() => user.Endereco.Cidade)" />
                 </div>
-                -->
+                <div class="form-group col-5">
+                <label>Estado</label>
+                    <InputText @bind-Value="user.Endereco.Estado" class="form-control" />
+                    <ValidationMessage For="@(() => user.Endereco.Estado)" />
+                </div>
             </div>
             
             <div class="form-row">
@@ -110,13 +108,14 @@
 @code {
 
     private User user = new User();
+    
     private EditContext editContext { get; set; }
 
     private async Task HandleValidSubmit()
     {
         //Enviar dados para o Controller no Backend
         var teste = await Http.PostAsJsonAsync("/User/Create", user);
-        NavigationManager.NavigateTo("user/ListUsuario");
+        NavigationManager.NavigateTo("user/ListUser");
 
     }
 

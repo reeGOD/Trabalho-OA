@@ -9,7 +9,6 @@ namespace Connect.Shared
 {
     public class Ingrediente
     {
-        [Required]
         public int Id { get; set; }
         
         [Required]
@@ -17,7 +16,7 @@ namespace Connect.Shared
 
         public int LancheId { get; set;}
 
-        public ICollection<Lanche> Lanches { get; set; }
+        public ICollection<LancheIngrediente> LancheIngredientes { get; set; }
 
     }
 }

@@ -9,13 +9,11 @@ namespace Connect.Shared
 {
     public class Pedido
     {
-        [Required]
-        public int id { get; set; }
+        public int Id { get; set; }
 
         [Required]
         [Column(TypeName = "decimal(5, 2)")]
         public decimal ValorTotal { get; set; }
-
         public int ItemId { get; set; }
 
         public ICollection<Item> Item { get; set; }

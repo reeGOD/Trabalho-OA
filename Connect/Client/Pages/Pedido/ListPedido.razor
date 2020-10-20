@@ -1,0 +1,53 @@
+@page  "/Pedido/ListPedido"
+@using System.Net.Http
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<h3>Pedido</h3>
+
+<div class="card-body">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in lancheList)
+            {
+            <tr>
+                <td>@item.Nome</td>
+                <td>@item.Valor</td>
+                <td>
+                    <a href="/Lanche/EditLanche/@item.Id.ToString()" ><button class="btn btn-success">Editar</button></a>
+                    <button class="btn btn-danger" @onclick="@(() => DeleteLanche(item.Id))">Delete</button>
+                </td>
+            </tr>
+            }   
+        </tbody>
+    </table>
+</div>
+
+@code {
+
+    private List<Lanche> lancheList = new List<Lanche>();
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        var lanches = await Http.GetFromJsonAsync<List<Lanche>>("/Lanche/List");
+        foreach (var item in lanches)
+        {
+            lancheList.Add(item);
+        }
+    }
+
+    private async Task DeleteLanche(int itemId)
+    {
+        //call controller
+        await Http.DeleteAsync("/Lanche/Delete/"+itemId);
+        NavigationManager.NavigateTo("Lanche/ListLanche", true);
+    }
+
+}

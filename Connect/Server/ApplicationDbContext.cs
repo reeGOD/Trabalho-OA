@@ -19,21 +19,21 @@ namespace Connect.Server
         public DbSet<Pedido> Pedidos { get; set; }
         
         public DbSet<Item> Items { get; set; }
-
+        
         protected override void OnModelCreating (ModelBuilder modelBuilder){
 
-            modelBuilder.Entity<Item>()
-                .HasKey(t => new {t.LancheId, t.PedidoId});
+            modelBuilder.Entity<LancheIngrediente>()
+                .HasKey(t => new {t.LancheId, t.IngredienteId});
 
-            modelBuilder.Entity<Item>()
-                .HasOne(pt => pt.Pedido)
-                .WithMany(p => p.Item)
-                .HasForeignKey(pt => pt.PedidoId);
-
-            modelBuilder.Entity<Item>()
+            modelBuilder.Entity<LancheIngrediente>()
                 .HasOne(pt => pt.Lanche)
-                .WithMany(t => t.Item)
+                .WithMany(p => p.LancheIngredientes)
                 .HasForeignKey(pt => pt.LancheId);
+
+            modelBuilder.Entity<LancheIngrediente>()
+                .HasOne(pt => pt.Ingrediente)
+                .WithMany(t => t.LancheIngredientes)
+                .HasForeignKey(pt => pt.IngredienteId);
         }
     }
 }

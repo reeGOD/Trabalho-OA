@@ -1,5 +1,5 @@
-@page  "/User/EditUsuario"
-@page "/User/EditUsuario/{Item}"
+@page  "/User/EditUser"
+@page "/User/EditUser/{Item}"
 @using System.Net.Http
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
@@ -35,6 +35,40 @@
                     <ValidationMessage For="@(() => user.LastName)" />
                 </div>
             </div>
+
+            <div class="form-row">
+                <div class="form-group col-5">
+                <label>CEP</label>
+                    <InputNumber @bind-Value="user.Endereco.CEP" class="form-control" />
+                    <ValidationMessage For="@(() => user.Endereco.CEP)" />
+                </div>
+                <div class="form-group col-5">
+                <label>Rua</label>
+                    <InputText @bind-Value="user.Endereco.Rua" class="form-control" />
+                    <ValidationMessage For="@(() => user.Endereco.Rua)" />
+                </div>
+                <div class="form-group col-5">
+                <label>Numero</label>
+                    <InputNumber @bind-Value="user.Endereco.Numero" class="form-control" />
+                    <ValidationMessage For="@(() => user.Endereco.Numero)" />
+                </div>
+                <div class="form-group col-5">
+                <label>Bairro</label>
+                    <InputText @bind-Value="user.Endereco.Bairro" class="form-control" />
+                    <ValidationMessage For="@(() => user.Endereco.Bairro)" />
+                </div>
+                <div class="form-group col-5">
+                <label>Cidade</label>
+                    <InputText @bind-Value="user.Endereco.Cidade" class="form-control" />
+                    <ValidationMessage For="@(() => user.Endereco.Cidade)" />
+                </div>
+                <div class="form-group col-5">
+                <label>Estado</label>
+                    <InputText @bind-Value="user.Endereco.Estado" class="form-control" />
+                    <ValidationMessage For="@(() => user.Endereco.Estado)" />
+                </div>
+            </div>
+
             <div class="form-row">
                 <div class="form-group col">
                     <label>Date of Birth</label>
@@ -91,7 +125,7 @@
     {
         //Enviar dados para o Controller no Backend
         var teste = await Http.PutAsJsonAsync("/User/Update", user);
-        NavigationManager.NavigateTo("user/ListUsuario");
+        NavigationManager.NavigateTo("user/ListUser");
     }
 
     private void HandleReset()
