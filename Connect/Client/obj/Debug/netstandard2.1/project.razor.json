@@ -74,35 +74,35 @@
         }
       },
       {
-        "HashCode": -465102239,
+        "HashCode": 323695601,
         "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.Lanche.ListLanche",
+        "Name": "Connect.Client.Pages.Lanche.CadastroLanche",
         "AssemblyName": "Connect.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ListLanche"
+            "TagName": "CadastroLanche"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.Lanche.ListLanche"
+          "Common.TypeName": "Connect.Client.Pages.Lanche.CadastroLanche"
         }
       },
       {
-        "HashCode": 934223840,
+        "HashCode": -568808817,
         "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.Lanche.ListLanche",
+        "Name": "Connect.Client.Pages.Lanche.CadastroLanche",
         "AssemblyName": "Connect.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Connect.Client.Pages.Lanche.ListLanche"
+            "TagName": "Connect.Client.Pages.Lanche.CadastroLanche"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.Lanche.ListLanche",
+          "Common.TypeName": "Connect.Client.Pages.Lanche.CadastroLanche",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

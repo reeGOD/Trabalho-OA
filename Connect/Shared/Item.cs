@@ -9,7 +9,7 @@ namespace Connect.Shared
     public class Item
     {
         public int Id { get; set; }
-        
+
         public int LancheId { get; set; }
 
         public Lanche Lanche { get; set; }

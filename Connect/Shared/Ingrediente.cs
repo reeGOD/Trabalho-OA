@@ -19,4 +19,4 @@ namespace Connect.Shared
         public ICollection<LancheIngrediente> LancheIngredientes { get; set; }
 
     }
-}
+} 

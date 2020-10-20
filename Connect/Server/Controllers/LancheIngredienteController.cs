@@ -8,11 +8,11 @@ using System.Linq;
 
 [ApiController]
 [Route("[controller]")]
-public class ItemController : Controller
+public class LancheIngredienteController : Controller
 {
     private readonly ApplicationDbContext db;
 
-    public ItemController(ApplicationDbContext db)
+    public LancheIngredienteController(ApplicationDbContext db)
     {
         this.db = db;
     }
@@ -21,31 +21,31 @@ public class ItemController : Controller
     [Route("List")]
     public async Task<IActionResult> Get()
     {
-        var lanches = await db.Items.ToListAsync();
-        return Ok(lanches);
+        var lancheingredientes = await db.LancheIngredientes.ToListAsync();
+        return Ok(lancheingredientes);
     }
 
     [HttpGet]
     [Route("GetById")]
     public async Task<IActionResult> Get([FromQuery] string id)
     {
-        var lanche = await db.Items.SingleOrDefaultAsync(x => x.Id == Convert.ToInt32(id));
-        return Ok(lanche);
+        var lancheingredientes = await db.LancheIngredientes.SingleOrDefaultAsync(x => x.Id == Convert.ToInt32(id));
+        return Ok(lancheingredientes);
     }
 
     [HttpPost]
     [Route("Create")]
-    public async Task<ActionResult> Post([FromBody] Item item)
+    public async Task<ActionResult> Post([FromBody] LancheIngrediente lancheingrediente)
     {
         try
         {
-            var newItem = new Item
+            var newLancheIngrediente = new LancheIngrediente
             {
 
-
+                
             };
-            
-            db.Add(newItem);
+
+            db.Add(newLancheIngrediente);
             await db.SaveChangesAsync();//INSERT INTO
             return Ok();
         }
@@ -57,14 +57,14 @@ public class ItemController : Controller
 
      [HttpPut]
     [Route("Update")]
-    public async Task<IActionResult> Put([FromBody] Item item)
+    public async Task<IActionResult> Put([FromBody] LancheIngrediente lancheingrediente)
     {
         if (!ModelState.IsValid)
         {
             return BadRequest(ModelState);
         }
 
-        db.Entry(item).State = EntityState.Modified;
+        db.Entry(lancheingrediente).State = EntityState.Modified;
         try
         {
             await db.SaveChangesAsync();
@@ -78,25 +78,25 @@ public class ItemController : Controller
 
     [HttpDelete]
     [Route("Delete/{id}")]
-    public async Task<ActionResult<Item>> Delete(int id)
+    public async Task<ActionResult<LancheIngrediente>> Delete(int id)
     {
         if (!ModelState.IsValid)
         {
             return BadRequest(ModelState);
         }
-        var item = await db.Items.FindAsync(id);
-        if (item == null)
+        var lancheingrediente = await db.LancheIngredientes.FindAsync(id);
+        if (lancheingrediente == null)
         {
             return NotFound();
         }
-        db.Items.Remove(item);
+        db.LancheIngredientes.Remove(lancheingrediente);
         await db.SaveChangesAsync();
-        return item;
+        return lancheingrediente;
     }
 
-    private bool ItemExists(int id)
+    private bool LancheIngredienteExists(int id)
     {
-        return db.Items.Any(e => e.Id == id);
+        return db.LancheIngredientes.Any(e => e.Id == id);
     }
 
 }

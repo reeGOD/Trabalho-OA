@@ -18,4 +18,4 @@ namespace Connect.Shared
 
         public Ingrediente Ingrediente { get; set; }
     }
-}    
+}   

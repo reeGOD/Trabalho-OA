@@ -13,7 +13,7 @@ namespace Connect.Shared
         
         [Required]
         public string Nome { get; set; }
-
+        
         [Required]
         [Column(TypeName = "decimal(5, 2)")]
         public Decimal Valor { get; set; }
@@ -26,4 +26,4 @@ namespace Connect.Shared
 
         public ICollection<Item> Items { get; set; }
     }
-}
+} 

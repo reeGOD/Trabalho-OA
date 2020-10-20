@@ -10,14 +10,14 @@
             <DataAnnotationsValidator />
             <div class="form-row">
                 <div class="form-group col-5">
-                    <label>Nome</label>
-                    <InputNumber @bind-Value="pedido.ValorTotal" class="form-control" />
-                    <ValidationMessage For="@(() => pedido.ValorTotal)" />
-                </div>
-                <div class="form-group col-5">
                     <label>Valor</label>
                     <InputNumber @bind-Value="pedido.Item" class="form-control" />
                     <ValidationMessage For="@(() => pedido.Item)" />
+                </div>
+                <div class="form-group col-5">
+                    <label>Nome</label>
+                    <InputNumber @bind-Value="pedido.ValorTotal" class="form-control" />
+                    <ValidationMessage For="@(() => pedido.ValorTotal)" />
                 </div>
             </div>
             <div class="text-center">

@@ -2945,6 +2945,39 @@
         }
       },
       {
+        "HashCode": 323695601,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Pages.Lanche.CadastroLanche",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CadastroLanche"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Pages.Lanche.CadastroLanche"
+        }
+      },
+      {
+        "HashCode": -568808817,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Pages.Lanche.CadastroLanche",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Connect.Client.Pages.Lanche.CadastroLanche"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Pages.Lanche.CadastroLanche",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -958858587,
         "Kind": "Components.Component",
         "Name": "Connect.Client.Pages.Lanche.EditLanche",
@@ -2994,39 +3027,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Connect.Client.Pages.Lanche.EditLanche",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -465102239,
-        "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.Lanche.ListLanche",
-        "AssemblyName": "Connect.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ListLanche"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.Lanche.ListLanche"
-        }
-      },
-      {
-        "HashCode": 934223840,
-        "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.Lanche.ListLanche",
-        "AssemblyName": "Connect.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Connect.Client.Pages.Lanche.ListLanche"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.Lanche.ListLanche",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

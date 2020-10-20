@@ -42,7 +42,7 @@ public class LancheController : Controller
             var newLanche = new Lanche
             {
                 Nome = lanche.Nome,
-                Valor = lanche.Valor
+                Valor = lanche.Valor,
             };
 
             db.Add(newLanche);
