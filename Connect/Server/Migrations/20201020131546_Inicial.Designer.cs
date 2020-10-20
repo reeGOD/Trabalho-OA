@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Connect.Server.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201020092647_Inicial")]
+    [Migration("20201020131546_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -136,7 +136,7 @@ namespace Connect.Server.Migrations
 
                     b.HasIndex("IngredienteId");
 
-                    b.ToTable("LancheIngrediente");
+                    b.ToTable("LancheIngredientes");
                 });
 
             modelBuilder.Entity("Connect.Shared.Pedido", b =>

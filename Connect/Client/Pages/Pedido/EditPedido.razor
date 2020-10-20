@@ -1,24 +1,24 @@
-@page  "/Lanche/EditLanche"
-@page "/Lanche/EditLanche/{Item}"
+@page  "/Pedido/EditPedido"
+@page "/Pedido/EditPedido/{Item}"
 @using System.Net.Http
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
 
 <div class="card m-3">
-    <h4 class="card-header">Atualizar Lanches</h4>
+    <h4 class="card-header">Atualizar Pedidos</h4>
     <div class="card-body">
-        <EditForm Model="@lanche" OnValidSubmit="HandleValidSubmit" @onreset="HandleReset">
+        <EditForm Model="@pedido" OnValidSubmit="HandleValidSubmit" @onreset="HandleReset">
             <DataAnnotationsValidator />
             <div class="form-row">
                 <div class="form-group col-5">
                     <label>Nome</label>
-                    <InputText @bind-Value="lanche.Nome" class="form-control" />
-                    <ValidationMessage For="@(() => lanche.Nome)" />
+                    <InputNumber @bind-Value="pedido.ValorTotal" class="form-control" />
+                    <ValidationMessage For="@(() => pedido.ValorTotal)" />
                 </div>
                 <div class="form-group col-5">
                     <label>Valor</label>
-                    <InputNumber @bind-Value="lanche.Valor" class="form-control" />
-                    <ValidationMessage For="@(() => lanche.Valor)" />
+                    <InputNumber @bind-Value="pedido.Item" class="form-control" />
+                    <ValidationMessage For="@(() => pedido.Item)" />
                 </div>
             </div>
             <div class="text-center">
@@ -31,7 +31,7 @@
 
 @code {
 
-    private Lanche lanche = new Lanche();
+    private Pedido pedido = new Pedido();
     private EditContext editContext { get; set; }
 
     [Parameter]
@@ -40,21 +40,21 @@
     protected override async Task OnInitializedAsync()
     {
         var itemId = Item;
-        lanche = await Http.GetFromJsonAsync<Lanche>($"/Product/GetById?id={itemId}");
-        editContext = new EditContext(lanche);
+        pedido = await Http.GetFromJsonAsync<Pedido>($"/Product/GetById?id={itemId}");
+        editContext = new EditContext(pedido);
     }
 
     private async Task HandleValidSubmit()
     {
         //Enviar dados para o Controller no Backend
-        var teste = await Http.PutAsJsonAsync("/Lanche/Update", lanche);
-        NavigationManager.NavigateTo("lanche/ListLanche");
+        var teste = await Http.PutAsJsonAsync("/Pedido/Update", pedido);
+        NavigationManager.NavigateTo("pedido/ListPedido");
     }
 
     private void HandleReset()
     {
-        lanche = new Lanche();
-        editContext = new EditContext(lanche);
+        pedido = new Pedido();
+        editContext = new EditContext(pedido);
     }
 
     

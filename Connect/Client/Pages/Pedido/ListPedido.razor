@@ -9,19 +9,19 @@
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">Nome</th>
-                <th scope="col">Valor</th>
+                <th scope="col">Item</th>
+                <th scope="col">ValorTotal</th>
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in lancheList)
+            @foreach (var item in pedidoList)
             {
             <tr>
-                <td>@item.Nome</td>
-                <td>@item.Valor</td>
+                <td>@item.Item</td>
+                <td>@item.ValorTotal</td>
                 <td>
-                    <a href="/Lanche/EditLanche/@item.Id.ToString()" ><button class="btn btn-success">Editar</button></a>
-                    <button class="btn btn-danger" @onclick="@(() => DeleteLanche(item.Id))">Delete</button>
+                    <a href="/Pedido/EditPedido/@item.Id.ToString()" ><button class="btn btn-success">Editar</button></a>
+                    <button class="btn btn-danger" @onclick="@(() => DeletePedido(item.Id))">Delete</button>
                 </td>
             </tr>
             }   
@@ -31,23 +31,23 @@
 
 @code {
 
-    private List<Lanche> lancheList = new List<Lanche>();
+    private List<Pedido> pedidoList = new List<Pedido>();
 
     protected override async Task OnInitializedAsync()
     {
 
-        var lanches = await Http.GetFromJsonAsync<List<Lanche>>("/Lanche/List");
-        foreach (var item in lanches)
+        var pedidos = await Http.GetFromJsonAsync<List<Pedido>>("/Pedido/List");
+        foreach (var item in pedidos)
         {
-            lancheList.Add(item);
+            pedidoList.Add(item);
         }
     }
 
-    private async Task DeleteLanche(int itemId)
+    private async Task DeletePedido(int itemId)
     {
         //call controller
-        await Http.DeleteAsync("/Lanche/Delete/"+itemId);
-        NavigationManager.NavigateTo("Lanche/ListLanche", true);
+        await Http.DeleteAsync("/Pedido/Delete/"+itemId);
+        NavigationManager.NavigateTo("Pedido/ListPedido", true);
     }
 
 }

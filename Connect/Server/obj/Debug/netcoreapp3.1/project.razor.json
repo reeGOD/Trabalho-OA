@@ -2879,121 +2879,35 @@
         }
       },
       {
-        "HashCode": -2019203942,
+        "HashCode": -516720774,
         "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.User.CadastroUser",
+        "Name": "Connect.Client.App",
         "AssemblyName": "Connect.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "CadastroUser"
+            "TagName": "App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.User.CadastroUser"
+          "Common.TypeName": "Connect.Client.App"
         }
       },
       {
-        "HashCode": 2069933618,
+        "HashCode": 869863392,
         "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.User.CadastroUser",
+        "Name": "Connect.Client.App",
         "AssemblyName": "Connect.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Connect.Client.Pages.User.CadastroUser"
+            "TagName": "Connect.Client.App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.User.CadastroUser",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1026085215,
-        "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.User.EditUser",
-        "AssemblyName": "Connect.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "EditUser"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Item",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Item"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.User.EditUser"
-        }
-      },
-      {
-        "HashCode": 252563937,
-        "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.User.EditUser",
-        "AssemblyName": "Connect.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Connect.Client.Pages.User.EditUser"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Item",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Item"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.User.EditUser",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 545388597,
-        "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.User.ListUser",
-        "AssemblyName": "Connect.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ListUser"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.User.ListUser"
-        }
-      },
-      {
-        "HashCode": 823572024,
-        "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.User.ListUser",
-        "AssemblyName": "Connect.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Connect.Client.Pages.User.ListUser"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.User.ListUser",
+          "Common.TypeName": "Connect.Client.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -3027,6 +2941,92 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Connect.Client.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -958858587,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Pages.Lanche.EditLanche",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "EditLanche"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Item",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Item"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Pages.Lanche.EditLanche"
+        }
+      },
+      {
+        "HashCode": -567484720,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Pages.Lanche.EditLanche",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Connect.Client.Pages.Lanche.EditLanche"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Item",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Item"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Pages.Lanche.EditLanche",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -465102239,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Pages.Lanche.ListLanche",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ListLanche"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Pages.Lanche.ListLanche"
+        }
+      },
+      {
+        "HashCode": 934223840,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Pages.Lanche.ListLanche",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Connect.Client.Pages.Lanche.ListLanche"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Pages.Lanche.ListLanche",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -3150,35 +3150,121 @@
         }
       },
       {
-        "HashCode": -516720774,
+        "HashCode": -2019203942,
         "Kind": "Components.Component",
-        "Name": "Connect.Client.App",
+        "Name": "Connect.Client.Pages.User.CadastroUser",
         "AssemblyName": "Connect.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "CadastroUser"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.App"
+          "Common.TypeName": "Connect.Client.Pages.User.CadastroUser"
         }
       },
       {
-        "HashCode": 869863392,
+        "HashCode": 2069933618,
         "Kind": "Components.Component",
-        "Name": "Connect.Client.App",
+        "Name": "Connect.Client.Pages.User.CadastroUser",
         "AssemblyName": "Connect.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Connect.Client.App"
+            "TagName": "Connect.Client.Pages.User.CadastroUser"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.App",
+          "Common.TypeName": "Connect.Client.Pages.User.CadastroUser",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1026085215,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Pages.User.EditUser",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "EditUser"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Item",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Item"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Pages.User.EditUser"
+        }
+      },
+      {
+        "HashCode": 252563937,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Pages.User.EditUser",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Connect.Client.Pages.User.EditUser"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Item",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Item"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Pages.User.EditUser",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 545388597,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Pages.User.ListUser",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ListUser"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Pages.User.ListUser"
+        }
+      },
+      {
+        "HashCode": 823572024,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Pages.User.ListUser",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Connect.Client.Pages.User.ListUser"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Pages.User.ListUser",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

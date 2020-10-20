@@ -19,6 +19,8 @@ namespace Connect.Server
         public DbSet<Pedido> Pedidos { get; set; }
         
         public DbSet<Item> Items { get; set; }
+
+        public DbSet<LancheIngrediente> LancheIngredientes { get; set; }
         
         protected override void OnModelCreating (ModelBuilder modelBuilder){
 

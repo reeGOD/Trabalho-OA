@@ -384,8 +384,8 @@ H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\RazorDeclaration\P
 H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\Razor\Pages\Pedido\CadastroPedido.razor.g.cs
 H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\Razor\Pages\Pedido\EditPedido.razor.g.cs
 H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\Razor\Pages\Pedido\ListPedido.razor.g.cs
-H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\dkJ9coQkgB6x9UbTKlmV-EQkUrdhaIq-HN6Wdtbkja4=.hash
 H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\Kq_4LWidaJHQA5eW1egxfnGtlm-ZhOlCCqqZowKd4PE=.hash
-H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\xHzpf3oAsxs2upVVvFNwmWaR6eqfRiE1WzBYTNdhJtY=.hash
 H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\gx3Roy9z_pUTDlFbmvZ_JfOaAqvAEtI7UY97D_IWYEA=.hash
-H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\t_VbNZRU4mfSpVN_gMrXzMRVbykmX56wq2a_ftzu2uY=.hash
+H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\RXDhPH23vcgZrMTDk3nc7zrF0dgGC_6o2ongdM5ew-s=.hash
+H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\MqsLzXrMoAxWo3L5FpHOt2lVq65RIz-qe_gclKEp5CQ=.hash
+H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\i6kJFLevt7auy5Itdz5s3arlOdAotb9k6jh3d_Ujd2Y=.hash

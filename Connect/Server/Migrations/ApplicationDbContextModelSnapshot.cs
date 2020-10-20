@@ -134,7 +134,7 @@ namespace Connect.Server.Migrations
 
                     b.HasIndex("IngredienteId");
 
-                    b.ToTable("LancheIngrediente");
+                    b.ToTable("LancheIngredientes");
                 });
 
             modelBuilder.Entity("Connect.Shared.Pedido", b =>

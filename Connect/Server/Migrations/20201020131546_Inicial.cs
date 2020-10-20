@@ -74,7 +74,7 @@ namespace Connect.Server.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "LancheIngrediente",
+                name: "LancheIngredientes",
                 columns: table => new
                 {
                     LancheId = table.Column<int>(nullable: false),
@@ -83,15 +83,15 @@ namespace Connect.Server.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_LancheIngrediente", x => new { x.LancheId, x.IngredienteId });
+                    table.PrimaryKey("PK_LancheIngredientes", x => new { x.LancheId, x.IngredienteId });
                     table.ForeignKey(
-                        name: "FK_LancheIngrediente_Ingredientes_IngredienteId",
+                        name: "FK_LancheIngredientes_Ingredientes_IngredienteId",
                         column: x => x.IngredienteId,
                         principalTable: "Ingredientes",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_LancheIngrediente_Lanches_LancheId",
+                        name: "FK_LancheIngredientes_Lanches_LancheId",
                         column: x => x.LancheId,
                         principalTable: "Lanches",
                         principalColumn: "Id",
@@ -166,8 +166,8 @@ namespace Connect.Server.Migrations
                 column: "PedidoId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_LancheIngrediente_IngredienteId",
-                table: "LancheIngrediente",
+                name: "IX_LancheIngredientes_IngredienteId",
+                table: "LancheIngredientes",
                 column: "IngredienteId");
         }
 
@@ -180,7 +180,7 @@ namespace Connect.Server.Migrations
                 name: "Items");
 
             migrationBuilder.DropTable(
-                name: "LancheIngrediente");
+                name: "LancheIngredientes");
 
             migrationBuilder.DropTable(
                 name: "Users");

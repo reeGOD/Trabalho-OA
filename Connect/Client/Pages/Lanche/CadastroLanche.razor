@@ -2,7 +2,7 @@
 @using System.Net.Http
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
-<!--
+
 <div class="card m-3">
     <h4 class="card-header">Cadastro de Lanche</h4>
     <div class="card-body">
@@ -16,8 +16,8 @@
                 </div>
                 <div class="form-group col-5">
                     <label>Nome do ingrediente</label>
-                    <InputText @bind-Value="lanche.Ingredientes.Nome" class="form-control" />
-                    <ValidationMessage For="@(() => lanche.Ingredientes.Nome)" />
+                    <InputText @bind-Value="lanche.LancheIngredientes.Ingrediente.Nome" class="form-control" />
+                    <ValidationMessage For="@(() => lanche.LancheIngredientes.Ingrediente.Nome)" />
                 </div>
                 <div class="form-group col-5">
                     <label>Valor</label>
@@ -32,7 +32,7 @@
         </EditForm>
     </div>
 </div>
--->
+
 @code {
 
     private Lanche lanche = new Lanche();

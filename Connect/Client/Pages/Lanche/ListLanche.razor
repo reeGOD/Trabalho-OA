@@ -4,7 +4,7 @@
 @inject NavigationManager NavigationManager
 
 <h3>Lanches</h3>
-<!--
+
 <div class="card-body">
     <table class="table">
         <thead>
@@ -19,7 +19,7 @@
             {
             <tr>
                 <td>@item.Nome</td>
-                <td>@item.Ingredientes.Nome</td>
+                <td>@item.LancheIngredientes.Ingrediente.Nome</td>
                 <td>@item.Valor</td>
                 <td>
                     <a href="/Lanche/EditLanche/@item.Id.ToString()" ><button class="btn btn-success">Editar</button></a>
@@ -30,7 +30,7 @@
         </tbody>
     </table>
 </div>
--->
+
 @code {
 
     private List<Lanche> lancheList = new List<Lanche>();
