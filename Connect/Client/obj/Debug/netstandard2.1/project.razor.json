@@ -140,39 +140,6 @@
         }
       },
       {
-        "HashCode": -2019203942,
-        "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.User.CadastroUser",
-        "AssemblyName": "Connect.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "CadastroUser"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.User.CadastroUser"
-        }
-      },
-      {
-        "HashCode": 2069933618,
-        "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.User.CadastroUser",
-        "AssemblyName": "Connect.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Connect.Client.Pages.User.CadastroUser"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.User.CadastroUser",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1026085215,
         "Kind": "Components.Component",
         "Name": "Connect.Client.Pages.User.EditUser",
@@ -255,6 +222,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Connect.Client.Pages.User.ListUser",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -2019203942,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Pages.User.CadastroUser",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CadastroUser"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Pages.User.CadastroUser"
+        }
+      },
+      {
+        "HashCode": 2069933618,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Pages.User.CadastroUser",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Connect.Client.Pages.User.CadastroUser"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Pages.User.CadastroUser",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

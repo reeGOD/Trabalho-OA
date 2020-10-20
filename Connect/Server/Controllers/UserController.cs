@@ -49,7 +49,7 @@ public class UserController : Controller
                 Email = user.Email,
                 Password = user.Password,
                 ConfirmPassword = user.ConfirmPassword,
-                AcceptTerms = user.AcceptTerms
+                AcceptTerms = user.AcceptTerms,
             };
 
             db.Add(newUser);

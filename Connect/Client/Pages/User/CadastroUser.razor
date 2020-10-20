@@ -34,6 +34,42 @@
                     <ValidationMessage For="@(() => user.LastName)" />
                 </div>
             </div>
+            
+            <div class="form-row">
+                <div class="form-group col-5">
+                <label>Rua</label>
+                    <InputText @bind-Value="user.Enderecos.Rua" class="form-control" />
+                    <ValidationMessage For="@(() => user.Enderecos.Rua)" />
+                </div>
+                <!--
+                <div class="form-group col-5">
+                <label>Rua</label>
+                    <InputNumber @bind-Value="user.Enderecos.CEP" class="form-control" />
+                    <ValidationMessage For="@(() => user.Enderecos.CEP)" />
+                </div>
+                <div class="form-group col-5">
+                <label>Rua</label>
+                    <InputNumber @bind-Value="user.Enderecos.Numero" class="form-control" />
+                    <ValidationMessage For="@(() => user.Enderecos.Numero)" />
+                </div>
+                <div class="form-group col-5">
+                <label>Rua</label>
+                    <InputText @bind-Value="user.Enderecos.Bairro" class="form-control" />
+                    <ValidationMessage For="@(() => user.Enderecos.Bairro)" />
+                </div>
+                <div class="form-group col-5">
+                <label>Rua</label>
+                    <InputText @bind-Value="user.Enderecos.Cidade" class="form-control" />
+                    <ValidationMessage For="@(() => user.Enderecos.Cidade)" />
+                </div>
+                <div class="form-group col-5">
+                <label>Rua</label>
+                    <InputText @bind-Value="user.Enderecos.Estado" class="form-control" />
+                    <ValidationMessage For="@(() => user.Enderecos.Estado)" />
+                </div>
+                -->
+            </div>
+            
             <div class="form-row">
                 <div class="form-group col">
                     <label>Date of Birth</label>

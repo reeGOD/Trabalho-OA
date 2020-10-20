@@ -376,8 +376,8 @@ H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\i7_uAWU_
 H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\9HGvnQk80Pk4z-yz7w4BO2sgYDG_J9xi9cNVTdlG7CQ=.hash
 H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\vO_Y3zeokojTa4SlwlL6yXGo08U8eD7QqLl3B_oUU8U=.hash
 H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\BwqPvfEq7obG3cySRO7Q8cXop8mRJtyLlWnHbU45xzM=.hash
-H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\maGZ4smpIRFO9PcwGpBawsNMPQffzsMiSS-35sdrCE8=.hash
-H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\c47A3bO1T-z5mF0uVnuNKmJLwFpc4_-2kanIrWxQm6U=.hash
-H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\Ayc9er7crB3bKhvMBXONo_yadWi1_k-h7tUUW002mKI=.hash
-H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\O5i1Un-JUQCMbbTbitWioGqxACgZ7YNQeYdFR3TFsZo=.hash
-H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\LCF51DVfyY1_UpBeGzY1Qf0zpAp5_KvB5HhRwvEl2Rs=.hash
+H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\ZdsV1-O136PesYjQTem4x3kOI0DW6ZrIWbpIumN3iyk=.hash
+H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\gzoAweW3cmZfNV01jKLfv_EcDIM0W28dW3Rdb0WVN8g=.hash
+H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\neUiBv3jnY5ZAsnrtqcLlslYGLK6Kog0zl6Q2XX5e4k=.hash
+H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\Q4qETGYVU-Ir5Uowd4a0ZTD-0EvBex4cmEnDYaPQgDg=.hash
+H:\GitHub\Trabalho-OA\Connect\Client\obj\Debug\netstandard2.1\integrity\pSzNU5nkw7fgB4mz5VNB_gZ-IveQceYdYi4rCF_V4_o=.hash
