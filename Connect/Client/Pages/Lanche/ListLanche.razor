@@ -4,7 +4,7 @@
 @inject NavigationManager NavigationManager
 
 <h3>Lanches</h3>
-
+<!--
 <div class="card-body">
     <table class="table">
         <thead>
@@ -30,16 +30,15 @@
         </tbody>
     </table>
 </div>
-
+-->
 @code {
 
-    private List<Lanche> lancheList = new List<Lanche>();
+    private List<Sandwich> lancheList = new List<Sandwich>();
 
     protected override async Task OnInitializedAsync()
     {
-
-        var lanches = await Http.GetFromJsonAsync<List<Lanche>>("/Lanche/List");
-        foreach (var item in lanches)
+        var sandwich = await Http.GetFromJsonAsync<List<Sandwich>>("/Lanche/List");
+        foreach (var item in sandwich)
         {
             lancheList.Add(item);
         }

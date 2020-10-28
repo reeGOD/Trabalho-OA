@@ -160,6 +160,39 @@
         }
       },
       {
+        "HashCode": -465102239,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Pages.Lanche.ListLanche",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ListLanche"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Pages.Lanche.ListLanche"
+        }
+      },
+      {
+        "HashCode": 934223840,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Pages.Lanche.ListLanche",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Connect.Client.Pages.Lanche.ListLanche"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Pages.Lanche.ListLanche",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1300656795,
         "Kind": "Components.Component",
         "Name": "Connect.Client.Pages.Pedido.CadastroPedido",
@@ -193,7 +226,7 @@
         }
       },
       {
-        "HashCode": -348567106,
+        "HashCode": -2076863518,
         "Kind": "Components.Component",
         "Name": "Connect.Client.Pages.Pedido.EditPedido",
         "AssemblyName": "Connect.Client",
@@ -203,23 +236,13 @@
             "TagName": "EditPedido"
           }
         ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Item",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Item"
-            }
-          }
-        ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Connect.Client.Pages.Pedido.EditPedido"
         }
       },
       {
-        "HashCode": 1687578150,
+        "HashCode": -1261492603,
         "Kind": "Components.Component",
         "Name": "Connect.Client.Pages.Pedido.EditPedido",
         "AssemblyName": "Connect.Client",
@@ -227,16 +250,6 @@
         "TagMatchingRules": [
           {
             "TagName": "Connect.Client.Pages.Pedido.EditPedido"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Item",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Item"
-            }
           }
         ],
         "Metadata": {

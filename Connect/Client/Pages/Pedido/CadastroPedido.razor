@@ -2,7 +2,7 @@
 @using System.Net.Http
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
-
+@*
 <div class="card m-3">
     <h4 class="card-header">Pedidos</h4>
     <div class="card-body">
@@ -31,6 +31,7 @@
 @code {
 
     private Pedido pedido = new Pedido();
+    
     private EditContext editContext { get; set; }
 
     private async Task HandleValidSubmit()
@@ -47,3 +48,4 @@
         editContext = new EditContext(pedido);
     }
 }
+*@

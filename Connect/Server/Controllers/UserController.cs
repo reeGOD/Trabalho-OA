@@ -29,7 +29,7 @@ public class UserController : Controller
     [Route("GetById")]
     public async Task<IActionResult> Get([FromQuery] string id)
     {
-        var user = await db.Users.SingleOrDefaultAsync(x => x.Id == Convert.ToInt32(id));
+        var user = await db.Users.SingleOrDefaultAsync(x => x.UserId == Convert.ToInt32(id));
         return Ok(user);
     }
 
@@ -49,7 +49,7 @@ public class UserController : Controller
                 Email = user.Email,
                 Password = user.Password,
                 ConfirmPassword = user.ConfirmPassword,
-                AcceptTerms = user.AcceptTerms,
+                AcceptTerms = user.AcceptTerms
             };
 
             db.Add(newUser);
@@ -98,12 +98,12 @@ public class UserController : Controller
         }
         db.Users.Remove(user);
         await db.SaveChangesAsync();
-        return user;
+        return NoContent();
     }
 
     private bool UserExists(int id)
     {
-        return db.Users.Any(e => e.Id == id);
+        return db.Users.Any(e => e.UserId == id);
     }
 
 }

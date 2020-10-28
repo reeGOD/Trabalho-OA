@@ -2,7 +2,7 @@
 @using System.Net.Http
 @inject HttpClient Http
 @inject NavigationManager NavigationManager
-
+<!--
 <div class="card m-3">
     <h4 class="card-header">Cadastro de Lanche</h4>
     <div class="card-body">
@@ -16,7 +16,7 @@
                 </div>
                 <div class="form-group col-5">
                     <label>Nome do ingrediente</label>
-                    <InputText @bind-Value="lanche.LancheIngredientes.Nome" class="form-control" />
+                    <InputText @bind-Value="lanche.LancheIngredientes." class="form-control" />
                     <ValidationMessage For="@(() => lanche.LancheIngredientes.Nome)" />
                 </div>
                 <div class="form-group col-5">
@@ -32,23 +32,23 @@
         </EditForm>
     </div>
 </div>
-
+-->
 @code {
 
-    private Lanche lanche = new Lanche();
+    private Sandwich sandwich = new Sandwich();
     private EditContext editContext { get; set; }
 
     private async Task HandleValidSubmit()
     {
         //Enviar dados para o Controller no Backend
-        var teste = await Http.PostAsJsonAsync("/Lanche/Create", lanche);
+        var teste = await Http.PostAsJsonAsync("/Lanche/Create", sandwich);
         NavigationManager.NavigateTo("Lanche/ListLanche");
 
     }
 
     private void HandleReset()
     {
-        lanche = new Lanche();
-        editContext = new EditContext(lanche);
+        sandwich = new Sandwich();
+        editContext = new EditContext(sandwich);
     }
 }
