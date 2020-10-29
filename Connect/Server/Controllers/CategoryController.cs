@@ -39,13 +39,12 @@ public class CategoryController : Controller
     {
         try
         {
-            var newCategoria = new Category
+            var newCategory = new Category
             {
                 Name = category.Name,
-                Description = category.Description,
             };
 
-            db.Add(newCategoria);
+            db.Add(newCategory);
             await db.SaveChangesAsync();//INSERT INTO
             return Ok();
         }
@@ -76,23 +75,23 @@ public class CategoryController : Controller
     //     return NoContent();
     // }
 
-    // [HttpDelete]
-    // [Route("Delete/{id}")]
-    // public async Task<ActionResult<User>> Delete(int id)
-    // {
-    //     if (!ModelState.IsValid)
-    //     {
-    //         return BadRequest(ModelState);
-    //     }
-    //     var product = await db.Products.FindAsync(id);
-    //     if (product == null)
-    //     {
-    //         return NotFound();
-    //     }
-    //     db.Products.Remove(product);
-    //     await db.SaveChangesAsync();
-    //     return Ok(product);
-    // }
+    [HttpDelete]
+    [Route("Delete/{id}")]
+    public async Task<ActionResult<User>> Delete(int id)
+    {
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+        var category = await db.Categories.FindAsync(id);
+        if (category == null)
+        {
+             return NotFound();
+        }
+        db.Categories.Remove(category);
+        await db.SaveChangesAsync();
+        return Ok(category);
+    }
 
 
 }

@@ -41,6 +41,72 @@
         }
       },
       {
+        "HashCode": -515398370,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Pages.Category.ListCategory",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ListCategory"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Pages.Category.ListCategory"
+        }
+      },
+      {
+        "HashCode": -652438776,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Pages.Category.ListCategory",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Connect.Client.Pages.Category.ListCategory"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Pages.Category.ListCategory",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -69781729,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Pages.Category.ResgisterCategory",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ResgisterCategory"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Pages.Category.ResgisterCategory"
+        }
+      },
+      {
+        "HashCode": -1687496391,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Pages.Category.ResgisterCategory",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Connect.Client.Pages.Category.ResgisterCategory"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Pages.Category.ResgisterCategory",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 1004657906,
         "Kind": "Components.Component",
         "Name": "Connect.Client.Pages.Index",
@@ -74,306 +140,154 @@
         }
       },
       {
-        "HashCode": 323695601,
+        "HashCode": 1411835406,
         "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.Lanche.CadastroLanche",
+        "Name": "Connect.Client.Pages.Order.ListOrder",
         "AssemblyName": "Connect.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "CadastroLanche"
+            "TagName": "ListOrder"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.Lanche.CadastroLanche"
+          "Common.TypeName": "Connect.Client.Pages.Order.ListOrder"
         }
       },
       {
-        "HashCode": -568808817,
+        "HashCode": 2100466348,
         "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.Lanche.CadastroLanche",
+        "Name": "Connect.Client.Pages.Order.ListOrder",
         "AssemblyName": "Connect.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Connect.Client.Pages.Lanche.CadastroLanche"
+            "TagName": "Connect.Client.Pages.Order.ListOrder"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.Lanche.CadastroLanche",
+          "Common.TypeName": "Connect.Client.Pages.Order.ListOrder",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -958858587,
+        "HashCode": -1520605992,
         "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.Lanche.EditLanche",
+        "Name": "Connect.Client.Pages.Order.RegisterOrder",
         "AssemblyName": "Connect.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "EditLanche"
+            "TagName": "RegisterOrder"
           }
         ],
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "Item",
+            "Name": "Text",
             "TypeName": "System.String",
             "Metadata": {
-              "Common.PropertyName": "Item"
+              "Common.PropertyName": "Text"
             }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.Lanche.EditLanche"
+          "Common.TypeName": "Connect.Client.Pages.Order.RegisterOrder"
         }
       },
       {
-        "HashCode": -567484720,
+        "HashCode": -1777290161,
         "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.Lanche.EditLanche",
+        "Name": "Connect.Client.Pages.Order.RegisterOrder",
         "AssemblyName": "Connect.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Connect.Client.Pages.Lanche.EditLanche"
+            "TagName": "Connect.Client.Pages.Order.RegisterOrder"
           }
         ],
         "BoundAttributes": [
           {
             "Kind": "Components.Component",
-            "Name": "Item",
+            "Name": "Text",
             "TypeName": "System.String",
             "Metadata": {
-              "Common.PropertyName": "Item"
+              "Common.PropertyName": "Text"
             }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.Lanche.EditLanche",
+          "Common.TypeName": "Connect.Client.Pages.Order.RegisterOrder",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -465102239,
+        "HashCode": 1253248197,
         "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.Lanche.ListLanche",
+        "Name": "Connect.Client.Pages.Sandwich.ListSandwich",
         "AssemblyName": "Connect.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ListLanche"
+            "TagName": "ListSandwich"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.Lanche.ListLanche"
+          "Common.TypeName": "Connect.Client.Pages.Sandwich.ListSandwich"
         }
       },
       {
-        "HashCode": 934223840,
+        "HashCode": 215243667,
         "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.Lanche.ListLanche",
+        "Name": "Connect.Client.Pages.Sandwich.ListSandwich",
         "AssemblyName": "Connect.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Connect.Client.Pages.Lanche.ListLanche"
+            "TagName": "Connect.Client.Pages.Sandwich.ListSandwich"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.Lanche.ListLanche",
+          "Common.TypeName": "Connect.Client.Pages.Sandwich.ListSandwich",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 1300656795,
+        "HashCode": 1606767481,
         "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.Pedido.CadastroPedido",
+        "Name": "Connect.Client.Pages.Sandwich.RegisterSandwich",
         "AssemblyName": "Connect.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "CadastroPedido"
+            "TagName": "RegisterSandwich"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.Pedido.CadastroPedido"
+          "Common.TypeName": "Connect.Client.Pages.Sandwich.RegisterSandwich"
         }
       },
       {
-        "HashCode": 593238334,
+        "HashCode": 1467266933,
         "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.Pedido.CadastroPedido",
+        "Name": "Connect.Client.Pages.Sandwich.RegisterSandwich",
         "AssemblyName": "Connect.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Connect.Client.Pages.Pedido.CadastroPedido"
+            "TagName": "Connect.Client.Pages.Sandwich.RegisterSandwich"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.Pedido.CadastroPedido",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -2076863518,
-        "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.Pedido.EditPedido",
-        "AssemblyName": "Connect.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "EditPedido"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.Pedido.EditPedido"
-        }
-      },
-      {
-        "HashCode": -1261492603,
-        "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.Pedido.EditPedido",
-        "AssemblyName": "Connect.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Connect.Client.Pages.Pedido.EditPedido"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.Pedido.EditPedido",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1325861298,
-        "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.Pedido.ListPedido",
-        "AssemblyName": "Connect.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ListPedido"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.Pedido.ListPedido"
-        }
-      },
-      {
-        "HashCode": -230145945,
-        "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.Pedido.ListPedido",
-        "AssemblyName": "Connect.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Connect.Client.Pages.Pedido.ListPedido"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.Pedido.ListPedido",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -2019203942,
-        "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.User.CadastroUser",
-        "AssemblyName": "Connect.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "CadastroUser"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.User.CadastroUser"
-        }
-      },
-      {
-        "HashCode": 2069933618,
-        "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.User.CadastroUser",
-        "AssemblyName": "Connect.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Connect.Client.Pages.User.CadastroUser"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.User.CadastroUser",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1026085215,
-        "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.User.EditUser",
-        "AssemblyName": "Connect.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "EditUser"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Item",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Item"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.User.EditUser"
-        }
-      },
-      {
-        "HashCode": 252563937,
-        "Kind": "Components.Component",
-        "Name": "Connect.Client.Pages.User.EditUser",
-        "AssemblyName": "Connect.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Connect.Client.Pages.User.EditUser"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Item",
-            "TypeName": "System.String",
-            "Metadata": {
-              "Common.PropertyName": "Item"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Pages.User.EditUser",
+          "Common.TypeName": "Connect.Client.Pages.Sandwich.RegisterSandwich",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -407,6 +321,72 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Connect.Client.Pages.User.ListUser",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1614531361,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Pages.User.RegisterUser",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "RegisterUser"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Pages.User.RegisterUser"
+        }
+      },
+      {
+        "HashCode": 421976212,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Pages.User.RegisterUser",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Connect.Client.Pages.User.RegisterUser"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Pages.User.RegisterUser",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1908780546,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Pages.Address.RegisterAddress",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "RegisterAddress"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Pages.Address.RegisterAddress"
+        }
+      },
+      {
+        "HashCode": 220211011,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Pages.Address.RegisterAddress",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Connect.Client.Pages.Address.RegisterAddress"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Pages.Address.RegisterAddress",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -507,39 +487,6 @@
         }
       },
       {
-        "HashCode": -555041573,
-        "Kind": "Components.Component",
-        "Name": "Connect.Client.Shared.NavMenu",
-        "AssemblyName": "Connect.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Shared.NavMenu"
-        }
-      },
-      {
-        "HashCode": -2084796189,
-        "Kind": "Components.Component",
-        "Name": "Connect.Client.Shared.NavMenu",
-        "AssemblyName": "Connect.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Connect.Client.Shared.NavMenu"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "Connect.Client.Shared.NavMenu",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 205638036,
         "Kind": "Components.Component",
         "Name": "Connect.Client.Shared.SurveyPrompt",
@@ -589,6 +536,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "Connect.Client.Shared.SurveyPrompt",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -555041573,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Shared.NavMenu",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Shared.NavMenu"
+        }
+      },
+      {
+        "HashCode": -2084796189,
+        "Kind": "Components.Component",
+        "Name": "Connect.Client.Shared.NavMenu",
+        "AssemblyName": "Connect.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Connect.Client.Shared.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "Connect.Client.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -12096,23 +12076,13 @@
       "FileKind": "componentImport"
     },
     {
-      "FilePath": "h:\\GitHub\\Trabalho-OA\\Connect\\Client\\Pages\\User\\CadastroUser.razor",
-      "TargetPath": "Pages\\User\\CadastroUser.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "h:\\GitHub\\Trabalho-OA\\Connect\\Client\\Pages\\User\\EditUser.razor",
-      "TargetPath": "Pages\\User\\EditUser.razor",
-      "FileKind": "component"
-    },
-    {
       "FilePath": "h:\\GitHub\\Trabalho-OA\\Connect\\Client\\Shared\\SurveyPrompt.razor",
       "TargetPath": "Shared\\SurveyPrompt.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "h:\\GitHub\\Trabalho-OA\\Connect\\Client\\Pages\\Pedido\\CadastroPedido.razor",
-      "TargetPath": "Pages\\Pedido\\CadastroPedido.razor",
+      "FilePath": "h:\\GitHub\\Trabalho-OA\\Connect\\Client\\Pages\\Sandwich\\ListSandwich.razor",
+      "TargetPath": "Pages\\Sandwich\\ListSandwich.razor",
       "FileKind": "component"
     },
     {
@@ -12126,8 +12096,13 @@
       "FileKind": "component"
     },
     {
-      "FilePath": "h:\\GitHub\\Trabalho-OA\\Connect\\Client\\Pages\\Lanche\\CadastroLanche.razor",
-      "TargetPath": "Pages\\Lanche\\CadastroLanche.razor",
+      "FilePath": "h:\\GitHub\\Trabalho-OA\\Connect\\Client\\Pages\\Category\\ResgisterCategory.razor",
+      "TargetPath": "Pages\\Category\\ResgisterCategory.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "h:\\GitHub\\Trabalho-OA\\Connect\\Client\\Pages\\Category\\ListCategory.razor",
+      "TargetPath": "Pages\\Category\\ListCategory.razor",
       "FileKind": "component"
     },
     {
@@ -12136,23 +12111,28 @@
       "FileKind": "component"
     },
     {
-      "FilePath": "h:\\GitHub\\Trabalho-OA\\Connect\\Client\\Pages\\Lanche\\ListLanche.razor",
-      "TargetPath": "Pages\\Lanche\\ListLanche.razor",
+      "FilePath": "h:\\GitHub\\Trabalho-OA\\Connect\\Client\\Pages\\Order\\ListOrder.razor",
+      "TargetPath": "Pages\\Order\\ListOrder.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "h:\\GitHub\\Trabalho-OA\\Connect\\Client\\Pages\\Lanche\\EditLanche.razor",
-      "TargetPath": "Pages\\Lanche\\EditLanche.razor",
+      "FilePath": "h:\\GitHub\\Trabalho-OA\\Connect\\Client\\Pages\\User\\RegisterUser.razor",
+      "TargetPath": "Pages\\User\\RegisterUser.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "h:\\GitHub\\Trabalho-OA\\Connect\\Client\\Pages\\Pedido\\ListPedido.razor",
-      "TargetPath": "Pages\\Pedido\\ListPedido.razor",
+      "FilePath": "h:\\GitHub\\Trabalho-OA\\Connect\\Client\\Pages\\Sandwich\\RegisterSandwich.razor",
+      "TargetPath": "Pages\\Sandwich\\RegisterSandwich.razor",
       "FileKind": "component"
     },
     {
-      "FilePath": "h:\\GitHub\\Trabalho-OA\\Connect\\Client\\Pages\\Pedido\\EditPedido.razor",
-      "TargetPath": "Pages\\Pedido\\EditPedido.razor",
+      "FilePath": "h:\\GitHub\\Trabalho-OA\\Connect\\Client\\Pages\\Order\\RegisterOrder.razor",
+      "TargetPath": "Pages\\Order\\RegisterOrder.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "h:\\GitHub\\Trabalho-OA\\Connect\\Client\\Pages\\Address\\RegisterAddress.razor",
+      "TargetPath": "Pages\\Address\\RegisterAddress.razor",
       "FileKind": "component"
     },
     {

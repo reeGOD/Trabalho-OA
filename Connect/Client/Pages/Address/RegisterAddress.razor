@@ -1,0 +1,88 @@
+@page  "/Address/RegisterAddress"
+@using System.Net.Http
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<div class="card m-3">
+    <h4 class="card-header">Endereco</h4>
+    <div class="card-body">
+        <EditForm Model="@addressDTO" OnValidSubmit="HandleValidSubmit" @onreset="HandleReset">
+            <DataAnnotationsValidator />
+                <div class="form-row">
+                <div class="form-group col-5">
+                <label>CEP</label>
+                    <InputNumber @bind-Value="addressDTO.CEP" class="form-control" />
+                    <ValidationMessage For="@(() => addressDTO.CEP)" />
+                </div>
+                <div class="form-group col-5">
+                <label>Rua</label>
+                    <InputText @bind-Value="addressDTO.Rua" class="form-control" />
+                    <ValidationMessage For="@(() => addressDTO.Rua)" />
+                </div>
+                <div class="form-group col-5">
+                <label>Numero</label>
+                    <InputNumber @bind-Value="addressDTO.Numero" class="form-control" />
+                    <ValidationMessage For="@(() => addressDTO.Numero)" />
+                </div>
+                <div class="form-group col-5">
+                <label>Bairro</label>
+                    <InputText @bind-Value="addressDTO.Bairro" class="form-control" />
+                    <ValidationMessage For="@(() => addressDTO.Bairro)" />
+                </div>
+                <div class="form-group col-5">
+                <label>Cidade</label>
+                    <InputText @bind-Value="addressDTO.Cidade" class="form-control" />
+                    <ValidationMessage For="@(() => addressDTO.Cidade)" />
+                </div>
+                <div class="form-group col-5">
+                <label>Estado</label>
+                    <InputText @bind-Value="addressDTO.Estado" class="form-control" />
+                    <ValidationMessage For="@(() => addressDTO.Estado)" />
+                </div>
+            </div>
+                <div>
+                <InputSelect @bind-Value="addressDTO.UserId">
+                    <option value="">Select</option>
+                    @foreach (var user in usersList)
+                        {
+                            <option value="@user.UserId">@user.FirstName</option>
+                        }
+                </InputSelect>
+                </div>
+            
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary mr-1">Salvar</button>
+                <button type="reset" class="btn btn-secondary">Cancel</button>
+            </div>
+        </EditForm>
+    </div>
+</div>
+
+
+@code {
+    
+    private AddressDTO addressDTO = new AddressDTO();
+    private EditContext editContext { get; set; }
+    private List<User> usersList = new List<User>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var users = await Http.GetFromJsonAsync<List<User>>("/User/List");
+        foreach (var item in users)
+        {
+            usersList.Add(item);
+        }
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        var teste = await Http.PostAsJsonAsync("/Address/Create", addressDTO);
+        NavigationManager.NavigateTo("User/ListUser");
+    }
+
+    private void HandleReset()
+    {
+        addressDTO = new AddressDTO();
+        editContext = new EditContext(addressDTO);
+    }
+}

@@ -9,7 +9,7 @@ namespace Connect.Shared
 {
     public class Address
     {
-        [Key]
+
         public int AddressId { get; set; }
 
         [Required]
@@ -31,7 +31,6 @@ namespace Connect.Shared
         public string Estado { get; set; }
 
         public int UserId { get; set; }
-
         public User User { get; set; }
     }
 }

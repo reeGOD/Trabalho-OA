@@ -11,8 +11,11 @@ namespace Connect.Shared
     public class Order
     {
         public int OrderId { get; set; }
+
         public User User { get; set; }
+
         public DateTime DateOrder { get; set; }
+
         public List<OrderDetail> OrderDetails { get; set; }
 
     }

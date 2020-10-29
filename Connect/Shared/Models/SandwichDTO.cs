@@ -9,7 +9,6 @@ namespace Connect.Shared
 {
     public class SandwichDTO
     {
-        [Required]
         public int SandwichId { get; set; }
         
         [Required]

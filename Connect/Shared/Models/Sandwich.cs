@@ -9,7 +9,6 @@ namespace Connect.Shared
 {
     public class Sandwich
     {
-        [Key]
         public int SandwichId { get; set; }
         
         [Required]
@@ -22,6 +21,7 @@ namespace Connect.Shared
         [Column(TypeName = "decimal(5,2)")]
         public Decimal Price { get; set; }
 
+        [Required]
         public int CategoryId { get; set; }
 
         public Category Category { get; set; }

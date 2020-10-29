@@ -1,0 +1,50 @@
+@page  "/Category/ListCategory"
+@using System.Net.Http
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<h3>Categorias</h3>
+
+<div class="card-body">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in categoryList)
+            {
+            <tr>
+                <td>@item.Name</td>
+                <td>
+                    <button class="btn btn-danger" @onclick="@(() => DeleteCategory(item.CategoryId))">Delete</button>
+                </td>
+            </tr>
+            }   
+        </tbody>
+    </table>
+</div>
+
+@code {
+
+    private List<Category> categoryList = new List<Category>();
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        var categories = await Http.GetFromJsonAsync<List<Category>>("/Category/List");
+        foreach (var item in categories)
+        {
+            categoryList.Add(item);
+        }
+    }
+
+    private async Task DeleteCategory(int itemId)
+    {
+        //call controller
+        await Http.DeleteAsync("/Category/Delete/"+itemId);
+        NavigationManager.NavigateTo("Category/ListCategory", true);
+    }
+
+}

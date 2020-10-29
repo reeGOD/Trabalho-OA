@@ -1,0 +1,53 @@
+@page  "/Order/ListOrder"
+@using System.Net.Http
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+<h3>Lanches</h3>
+
+<div class="card-body">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Ingrediente</th>
+                <th scope="col">Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in sandwichist)
+            {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Description</td>
+                <td>@item.Price</td>
+                <td>
+                    <button class="btn btn-danger" @onclick="@(() => DeleteSandwich(item.SandwichId))">Delete</button>
+                </td>
+            </tr>
+            }   
+        </tbody>
+    </table>
+</div>
+
+@code {
+
+    private List<Sandwich> sandwichist = new List<Sandwich>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var sandwich = await Http.GetFromJsonAsync<List<Sandwich>>("/Sandwich/List");
+        foreach (var item in sandwich)
+        {
+            sandwichist.Add(item);
+        }
+    }
+
+    private async Task DeleteSandwich(int itemId)
+    {
+        //call controller
+        await Http.DeleteAsync("/Sandwich/Delete/"+itemId);
+        NavigationManager.NavigateTo("Sandwich/ListSandwich", true);
+    }
+
+}
+

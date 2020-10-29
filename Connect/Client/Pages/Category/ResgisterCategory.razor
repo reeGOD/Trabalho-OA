@@ -1,0 +1,46 @@
+@page  "/Category/RegisterCategory"
+@using System.Net.Http
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<div class="card m-3">
+    <h4 class="card-header">Cadastro de Categoria</h4>
+    <div class="card-body">
+        <EditForm Model="@categories" OnValidSubmit="HandleValidSubmit" @onreset="HandleReset">
+            <DataAnnotationsValidator />
+            <div class="form-row">
+                <div class="form-group col-5">
+                    <label>Categorias</label>
+                    <InputText @bind-Value="categories.Name" class="form-control" />
+                    <ValidationMessage For="@(() => categories.Name)" />
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary mr-1">Salvar</button>
+                <button type="reset" class="btn btn-secondary">Cancel</button>
+            </div>
+        </EditForm>
+    </div>
+</div>
+@code {
+
+    private Category categories = new Category();
+
+    private EditContext editContext { get; set; }
+
+    private async Task HandleValidSubmit()
+    {
+        //Enviar dados para o Controller no Backend
+        var teste = await Http.PostAsJsonAsync("/Category/Create", categories);
+        NavigationManager.NavigateTo("Category/ListCategory");
+
+    }
+
+    private void HandleReset()
+    {
+        categories = new Category();
+        editContext = new EditContext(categories);
+    }
+
+
+}

@@ -9,7 +9,6 @@ namespace Connect.Shared
 {
     public class User
     {
-        [Key]
         public int UserId { get; set; }
         [Required]
         public string Title { get; set; }
@@ -43,5 +42,6 @@ namespace Connect.Shared
         public bool AcceptTerms { get; set; }
         
         public Address Address { get; set; }
+
     }
 }

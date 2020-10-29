@@ -1,0 +1,69 @@
+@page  "/Sandwich/RegisterSandwich"
+@using System.Net.Http
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<div class="card m-3">
+    <h4 class="card-header">Cadastro de Lanche</h4>
+    <div class="card-body">
+        <EditForm Model="@sandwichDTO" OnValidSubmit="HandleValidSubmit" @onreset="HandleReset">
+            <DataAnnotationsValidator />
+            <div class="form-row">
+                <label>Nome do Lanche:</label>
+                <InputText @bind-Value="sandwichDTO.Name" class="form-control" />
+                <ValidationMessage For="@(() => sandwichDTO.Name)" />
+            </div>
+            <div class="form-row">
+                <label>Descrição</label>
+                <InputText @bind-Value="sandwichDTO.Description" class="form-control" />
+                <ValidationMessage For="@(() => sandwichDTO.Description)" />
+            </div>
+            <div class="form-row">
+                <label>Preço</label>
+                <InputNumber @bind-Value="sandwichDTO.Price" class="form-control" />
+                <ValidationMessage For="@(() => sandwichDTO.Price)" />
+            </div>
+            <InputSelect @bind-Value="sandwichDTO.CategoryId">
+                <option value="">Select</option>
+                @foreach (var category in categoriesList)
+                {
+                    <option value="@category.CategoryId">@category.Name</option>
+                }
+            </InputSelect>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary mr-1">Salvar</button>
+                <button type="reset" class="btn btn-secondary">Cancel</button>
+            </div>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+
+    private SandwichDTO sandwichDTO = new SandwichDTO();
+
+    private EditContext editContext { get; set; }
+    
+    private List<Category> categoriesList = new List<Category>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var categories = await Http.GetFromJsonAsync<List<Category>>("/Category/List");
+        foreach (var item in categories)
+        {
+            categoriesList.Add(item);
+        }
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        var teste = await Http.PostAsJsonAsync("/Sandwich/Create", sandwichDTO);
+        NavigationManager.NavigateTo("Sandwich/ListSandwich");
+    }
+
+    private void HandleReset()
+    {
+        sandwichDTO = new SandwichDTO();
+        editContext = new EditContext(sandwichDTO);
+    }
+}

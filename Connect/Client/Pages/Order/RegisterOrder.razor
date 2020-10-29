@@ -1,0 +1,90 @@
+@page  "/Order/ResgisterOrder"
+@using System.Net.Http
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+
+<div class="card m-3">
+    <h4 class="card-header">Pedido</h4>
+    <div class="card-body">
+        <EditForm Model="@orderDTO" OnValidSubmit="HandleValidSubmit">
+            <DataAnnotationsValidator />
+            <div class="form-row">
+                <div class="form-group col">
+                    <label>Categorias</label>
+                    <InputSelect 
+                    ValueExpression="@(()=>orderDTO.CategoryId)" 
+                    Value="@orderDTO.CategoryId"
+                    ValueChanged="@((string value) => OnChangeCat(value))">
+                        <option value="">Selecione a Categoria</option>
+                        @foreach (var category in categoriesList)
+                            {
+                                <option value="@category.CategoryId">@category.Name</option>
+                            }
+                    </InputSelect>
+                </div>
+                <div class="form-group col">
+                    <label>Lanche</label>
+                    <InputSelect @bind-Value="orderDTO.SandwichId">
+                        <option value="">Selecione o Produto</option>
+                        @foreach (var sandwich in sandwichesList)
+                        {
+                            <option value="@sandwich.SandwichId">@sandwich.Name</option>
+                        }
+                    </InputSelect>
+                </div>
+            </div>
+            <div class="form-row">
+                <label>Quantidade</label>
+                <InputNumber @bind-Value="orderDTO.Amount" class="form-control" />
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Salvar</button>
+                <button type="reset" class="btn btn-secondary">Cancel</button>
+            </div>
+        </EditForm>
+    </div>
+</div>
+
+@code
+{
+    private OrderDTO orderDTO = new OrderDTO();
+
+    private EditContext editContext { get; set; }
+
+    private List<Category> categoriesList = new List<Category>();
+
+    private List<Sandwich> sandwichesList = new List<Sandwich>();
+
+    [Parameter]
+    public string Text { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var categories = await Http.GetFromJsonAsync<List<Category>>("/Category/List");
+        foreach (var item in categories)
+        {
+            categoriesList.Add(item);
+        }
+    }
+
+    private async Task OnChangeCat(string value)
+    {
+        orderDTO.CategoryId = value; //Seta o valor da Categoria no pedidoDto
+        var sandwiches = await Http.GetFromJsonAsync<List<Sandwich>>("/Sandwich/List");
+        sandwichesList.Clear();
+        var sandwichByCategory = sandwiches.Where(c => c.CategoryId == Convert.ToInt32(value));
+        foreach (var item in sandwichByCategory)
+        {
+            sandwichesList.Add(item);
+        }
+
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        await Http.PostAsJsonAsync("/Order/Create", orderDTO);
+        NavigationManager.NavigateTo("Order/ListOrder");
+    }
+
+
+}
